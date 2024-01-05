@@ -1,15 +1,10 @@
 import torchvision
 import torchvision.transforms as T
-from torchvision.models import alexnet
 from torch.utils.data import Dataset, DataLoader
 from pathlib import Path
 import numpy as np
 
-from image_utils import (
-    load_image,
-    _to_pil,
-    show_image
-)
+from utils import load_image, _to_pil, show_image
 
 IMG_SIZE = 224
 BATCH_SIZE = 2
